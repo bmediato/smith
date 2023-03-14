@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { NewProduct } from '../interfaces';
+import { NewProduct } from '../interfaces/product';
 
 import * as productService from '../services/productService';
 

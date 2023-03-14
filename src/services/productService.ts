@@ -1,4 +1,4 @@
-import { NewProduct } from '../interfaces';
+import { NewProduct } from '../interfaces/product';
 import * as productModel from '../models/productModel';
 
 export async function getAll() {
