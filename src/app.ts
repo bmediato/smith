@@ -11,5 +11,6 @@ app.get('/products', productController.getAll);
 app.post('/products', productController.create);
 app.post('/users', userController);
 app.get('/orders', orderController);
+app.post('/login');
 
 export default app;
