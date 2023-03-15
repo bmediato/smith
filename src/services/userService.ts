@@ -1,4 +1,4 @@
-import { NewUser } from '../interfaces/user';
+import { LoginUser, NewUser } from '../interfaces/user';
 import * as userModel from '../models/userModel';
 import createToken from '../middleware/auth';
 
@@ -8,8 +8,7 @@ export async function create(user:NewUser) {
   return token;
 }
 
-export async function getByName(username:string) {
-  const result = await userModel.getByName(username);
-
+export async function getByName(user: LoginUser) {
+  const result = await userModel.getByName(user.username);
   return result;
 }
